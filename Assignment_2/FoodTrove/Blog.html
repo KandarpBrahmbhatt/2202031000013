@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            height: 39px;
+            /* background-color: grey; */
+            display: flex;
+            align-items: center;
+            /* navbar ni andar lakhela ne center ma lavava mate use thay 6e.*/
+            justify-content: space-around;
+            box-shadow: 5px 1px 5px 5px #E9E9E9;
+            font-family: Arial;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 25px;
+            text-transform: uppercase;
+        }
+
+        ul li a:hover {
+            color: #F53E32;
+        }
+
+        .searchbar {
+            display: flex;
+            align-items: center;
+            height: 59px;
+            /* background-color: rgb(125, 227, 225); */
+            justify-content: space-around;
+            box-shadow: 5px 1px 5px 5px #E9E9E9;
+        }
+
+        .searchbar input {
+            width: 29rem;
+            padding: 5px;
+            border: 2px solid #64B496;
+        }
+
+        button {
+            width: 5rem;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #F53E32;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .line {
+            height: 59px;
+            background-color: #F53E32;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .add img {
+            height: 25rem;
+            width: 100%;
+            object-fit: contain;
+            /*aana thi image nahi fate and image center ma aai jase*/
+        }
+
+        #user {
+            color: #F53E32;
+        }
+
+        #date {
+            color: #7A7A7A;
+        }
+
+        .para {
+            padding: 3rem 22rem;
+        }
+
+        .add p {
+            display: inline;
+        }
+
+        .para h2 {
+            padding: 25px 0px;
+        }
+
+        .para #Detail {
+            color: #7A7A7A;
+        }
+
+        .container {
+            padding-left: 22rem;
+        }
+
+        .container img {
+            display: inline;
+            width: 25rem;
+            /* object-fit: contain; */
+            /* padding-left: 10rem; */
+        }
+
+        .text {
+            display: flex;
+            padding: 2rem 21.5rem;
+
+        }
+
+        .text p {
+            padding: 10px;
+            font-weight: bold;
+
+        }
+
+        .info {
+            border: 2px solid #7A7A7A;
+            margin: 0rem 21rem;
+        }
+
+        .info p {
+            color: #2B2B2D;
+            text-align: center;
+            padding: 2rem 5rem;
+        }
+
+        /* footer */
+        .foot {
+            display: flex;
+        }
+
+        footer {
+            height: 15rem;
+            background-color: #F7F7F8;
+            color: #777777;
+
+            justify-content: center;
+            padding: 25px;
+            display: flex;
+        }
+
+        footer #img {
+            padding: 15px;
+            font-weight: 900;
+        }
+
+        footer p {
+            padding-left: 25px;
+        }
+
+        .two p {
+            padding: 7px 25px;
+        }
+
+        footer #img2 {
+            padding: 5px 25px;
+            font-weight: 900;
+        }
+
+        footer .two {
+            padding: 15px;
+        }
+
+        .three #img3 {
+            padding: 20px 25px;
+            font-weight: 900;
+
+        }
+
+        .three p {
+            padding: 6px 25px;
+        }
+
+        .four #img4 {
+            padding: 20px 25px;
+            font-weight: 900;
+        }
+
+        .four input {
+            margin: 15px;
+        }
+
+        .four i {
+            padding: 15px 25px;
+            margin: 5px 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href="LOGIN.html">Login</a></li>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Bill.html">Bill</a></li>
+                <li><a href="Location..html">Location</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <p> <i class="fa-solid fa-phone"></i> +123(456)(7890)</p>
+        </div>
+
+        <div class="searchbar">
+            <p>🥭FoodTrove</p>
+            <input type="text" placeholder="Search for item">
+            <button>Search</button>
+
+            <p> <i class="fa-regular fa-user"></i> Account</p>
+            <p> <i class="fa-regular fa-heart"></i> wishlist</p>
+            <p> <i class="fa-solid fa-cart-shopping"></i> Cart</p>
+
+        </div>
+
+        <div class="line">
+            <li>Blog Details</li>
+            <li>Home - Blog Details</li>
+        </div>
+    </header>
+
+    <main>
+        <div class="add">
+            <img src="Blog-1.png" alt="">
+            <div class="para">
+                <p id="user">By Admin</p>
+                <p id="date">/07 Comment / Date - 09,09,2024</p>
+                <h2>Health Benefits of a Row food</h2>
+                <p id="Detail"> Raw fruits, vegetables, nuts, and seeds are packed with essential vitamins, minerals,
+                    and antioxidants that support overall health and well-being.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="Blog-2 img.png" alt="">
+            <img src="Blog-3 img.png" alt="">
+        </div>
+
+        <div class="text">
+            <p>more energy, better skin, improved digestion</p>
+            <p>more energy, better skin, improved digestion</p>
+        </div>
+
+        <div class="info">
+            <p>Raw food enthusiasts often tout its numerous health benefits, and there are indeed several potential
+                advantages to incorporating more raw foods into your diet. Here are some commonly cited health benefits
+                of a raw food diet:</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="one">
+                <p id="img">🥭FoodTrove</p>
+                <p>FoodTrove is the biggest market of grocery products. <br> Get your daily needs from our store.</p>
+                <br>
+                <p>example@email.com</p>
+                <br>
+                <p>+91 123 4567890</p>
+            </div>
+
+            <div class="two">
+                <p id="img2">company</p>
+                <p>About us</p>
+                <p>Delivery Information</p>
+                <p>Privacy Policy</p>
+                <p>contact Us</p>
+                <p>Support Center</p>
+            </div>
+
+            <div class="three">
+                <p id="img3">Category</p>
+                <p>Dairy & Bakery</p>
+                <p>Fruits & Vegetable</p>
+                <p>Juice & Drinks</p>
+                <p>Fast Food</p>
+            </div>
+
+            <div class="four">
+                <p id="img4">Subscribe Our Newsletter</p>
+                <input type="text" placeholder="Search hear">
+                <br>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
